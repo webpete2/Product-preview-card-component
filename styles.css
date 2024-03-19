@@ -1,0 +1,162 @@
+body {
+    font-size: 14px;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(30, 38%, 92%);
+
+    width: 725px;
+
+    margin: 0 auto;
+}
+
+
+.product-image {
+    border: 1px solid none;
+    
+    background-image: url("image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    height: 30.5rem;
+    width: 45%;
+
+    margin-right: 0;
+}
+
+
+.description {
+    border: 1px solid white;
+    
+    background-color: white;
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+    width: 20rem;
+}
+
+.content {
+    margin: 2rem;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: hsl(228, 12%, 48%);
+}
+
+h2 {
+    font-family: Fraunces;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info, .retail {
+    font-family: Montserrat;
+    font-weight: 500;
+    
+    color: hsl(228, 12%, 48%);
+}
+
+.cost {
+    display: flex;
+}
+
+.discount {
+    color: hsl(158, 36%, 37%);
+
+    font-family: Fraunces;
+    font-size: 1.875rem;
+    font-weight: 700;
+
+
+    margin-right: 20px;
+}
+
+.retail {
+    text-decoration: line-through;
+    align-self: center;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: Montserrat;
+    font-weight: bold;
+
+    background-color: hsl(158, 36%, 37%);
+
+    height: 3rem;
+    width: 100%;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(158, 36%, 17%);
+}
+
+
+@media only screen and (max-width: 750px) {
+    body {
+        flex-direction: column;
+        height: 74.7vh;
+        width: 100vw;
+        
+        margin-top: 100px;
+    }
+    
+    .product-image {
+        background-image: url("image-product-mobile.jpg");
+
+        width: 25rem;
+
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .description {
+        width: 25rem;
+
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .info {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    button {
+        margin-top: 0px;
+    }
+}
